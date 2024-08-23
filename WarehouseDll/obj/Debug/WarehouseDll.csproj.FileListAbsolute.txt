@@ -1,0 +1,11 @@
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\obj\Debug\WarehouseDll.csproj.AssemblyReference.cache
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\obj\Debug\WarehouseDll.csproj.CoreCompileInputs.cache
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\WarehouseDll.dll
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\WarehouseDll.pdb
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\MySql.Data.dll
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\ROSE_Dll.dll
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\Newtonsoft.Json.dll
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\bin\Debug\ROSE_Dll.pdb
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\obj\Debug\WarehouseDll.csproj.CopyComplete
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\obj\Debug\WarehouseDll.dll
+E:\Soucre Code\C#\WarehouseDll\WarehouseDll\obj\Debug\WarehouseDll.pdb

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B1BFB3D-1A9C-4220-956B-8890E6F137C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarehouseDll</RootNamespace>
+    <AssemblyName>WarehouseDll</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ROSE_Dll">
+      <HintPath>..\..\New folder (2)\Rose Dll\ClassLibrary1\ClassLibrary1\bin\Debug\ROSE_Dll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\BaseBUS.cs" />
+    <Compile Include="BUS\FinishedProduct\FPBillExportBUS.cs" />
+    <Compile Include="BUS\FinishedProduct\FPBillImportBUS.cs" />
+    <Compile Include="BUS\Material\BillExportMaterialBUS.cs" />
+    <Compile Include="BUS\Material\BillImportMaterialBUS.cs" />
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\FinishedProduct\BaseFPBillDAO.cs" />
+    <Compile Include="DAO\FinishedProduct\FPBillExportDAO.cs" />
+    <Compile Include="DAO\FinishedProduct\FPBillImportDAO.cs" />
+    <Compile Include="DAO\Material\BaseMaterialBillDAO.cs" />
+    <Compile Include="DAO\Material\BillExportMaterialDAO.cs" />
+    <Compile Include="DAO\Material\BillImportDAO.cs" />
+    <Compile Include="DAO\Report\ReportDAO.cs" />
+    <Compile Include="DTO\BoxDetailWork.cs" />
+    <Compile Include="DTO\BoxInfor.cs" />
+    <Compile Include="DTO\Cus\CustomerInfor.cs" />
+    <Compile Include="DTO\CycleReport.cs" />
+    <Compile Include="DTO\FinishedProduct\BoxReportLocation.cs" />
+    <Compile Include="DTO\FinishedProduct\CatergorySearchLocation.cs" />
+    <Compile Include="DTO\FinishedProduct\FBBook.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBill.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBillDetail.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBillExportCus.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBillExportCusDetail.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBillType.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBook.cs" />
+    <Compile Include="DTO\FinishedProduct\FPBoxHistory.cs" />
+    <Compile Include="DTO\FinishedProduct\FPDetailModelLink.cs" />
+    <Compile Include="DTO\FinishedProduct\FPLocation.cs" />
+    <Compile Include="DTO\FinishedProduct\FPWorkRemain.cs" />
+    <Compile Include="DTO\FinishedProduct\Location.cs" />
+    <Compile Include="DAO\FinishedProduct\LocationControl.cs" />
+    <Compile Include="DTO\Material\Export\BillExportMaterial.cs" />
+    <Compile Include="DTO\Material\Export\BillExportMaterialDetail.cs" />
+    <Compile Include="DTO\Material\Export\BillExportMaterialDetailReport.cs" />
+    <Compile Include="DTO\Material\Import\Bill.cs" />
+    <Compile Include="DTO\Material\Import\BillExecuteDetail.cs" />
+    <Compile Include="DTO\Material\Import\BillImport.cs" />
+    <Compile Include="DTO\Material\Import\BillImportInfor.cs" />
+    <Compile Include="DTO\Material\Import\BillImportPO.cs" />
+    <Compile Include="DTO\Material\Import\BillInfor.cs" />
+    <Compile Include="DTO\Material\Import\DataInput.cs" />
+    <Compile Include="DTO\Material\Import\PartSpecialEXP.cs" />
+    <Compile Include="DTO\StatusDefine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAO\Cus\" />
+    <Folder Include="Dbo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
