@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using WarehouseDll.DTO.Material;
 using WarehouseDll.DTO.Material.Import;
 
 namespace WarehouseDll.DAO.Material
@@ -108,10 +109,10 @@ namespace WarehouseDll.DAO.Material
             var ls = (from r in dt.AsEnumerable()
                       select new BillImportInfor()
                       {
-                          BillNumber = r.Field<string>("BILL_NUMBER"),
-                          Part = r.Field<string>("CUS_PART"),
-                          Qty = r.Field<int>("QTY"),
-                          ReciveQty = r.Field<int>("RECIVE_QTY")
+                          //BillNumber = r.Field<string>("BILL_NUMBER"),
+                          //Part = r.Field<string>("CUS_PART"),
+                          //req = r.Field<int>("QTY"),
+                          //ReciveQty = r.Field<int>("RECIVE_QTY")
                       }).ToList();
             return ls;
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using WarehouseDll.DTO.Material;
 using WarehouseDll.DTO.Material.Import;
 
 namespace WarehouseDll.BUS.Material

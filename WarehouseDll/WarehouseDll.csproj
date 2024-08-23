@@ -84,12 +84,12 @@
     <Compile Include="DTO\Material\Export\BillExportMaterial.cs" />
     <Compile Include="DTO\Material\Export\BillExportMaterialDetail.cs" />
     <Compile Include="DTO\Material\Export\BillExportMaterialDetailReport.cs" />
-    <Compile Include="DTO\Material\Import\Bill.cs" />
+    <Compile Include="DTO\Material\Bill.cs" />
     <Compile Include="DTO\Material\Import\BillExecuteDetail.cs" />
     <Compile Include="DTO\Material\Import\BillImport.cs" />
     <Compile Include="DTO\Material\Import\BillImportInfor.cs" />
     <Compile Include="DTO\Material\Import\BillImportPO.cs" />
-    <Compile Include="DTO\Material\Import\BillInfor.cs" />
+    <Compile Include="DTO\Material\BillInfor.cs" />
     <Compile Include="DTO\Material\Import\DataInput.cs" />
     <Compile Include="DTO\Material\Import\PartSpecialEXP.cs" />
     <Compile Include="DTO\StatusDefine.cs" />

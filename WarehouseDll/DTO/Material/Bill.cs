@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WarehouseDll.DTO.Material.Import
+namespace WarehouseDll.DTO.Material
 {
     public class Bill
     {
@@ -26,8 +26,9 @@ namespace WarehouseDll.DTO.Material.Import
         public string Note { get; set; }
         public string PO { get; set; }
         public int DefineBill { get; set; }
+        public List<BillInfor> BillInfors { get; set; }
         public Bill() { }
-        public Bill(DataRow row)
+        public Bill(DataRow row, bool LoadDetail = false)
         {
             Id = int.Parse(row["ID"].ToString());
             BillNumber = row["BILL_NUMBER"].ToString();
@@ -41,6 +42,7 @@ namespace WarehouseDll.DTO.Material.Import
             StateId = int.Parse(row["STATE_ID"].ToString());
             CreatTime = DateTime.Parse(row["CREAT_TIME"].ToString());
             IntendTime = DateTime.Parse(row["INTEND_TIME"].ToString());
+            
         }
     }
 }

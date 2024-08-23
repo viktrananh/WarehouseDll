@@ -22,7 +22,7 @@ namespace WarehouseDll.BUS.Material.Import
 
             foreach (var item in bill.BillImportInfors)
             {
-                sql += $"INSERT INTO `STORE_MATERIAL_DB`.`BILL_INFOR` (`BILL_NUMBER`, `PART`, `QTY`) VALUES ('{item.BillNumber}', '{item.Part}', '{item.Qty}');";
+                //sql += $"INSERT INTO `STORE_MATERIAL_DB`.`BILL_INFOR` (`BILL_NUMBER`, `PART`, `QTY`) VALUES ('{item.BillNumber}', '{item.Part}', '{item.Qty}');";
             }
             if (_MySql.InsertDataMySQL(sql)) return true;
             return false;

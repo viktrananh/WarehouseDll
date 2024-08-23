@@ -37,7 +37,7 @@ namespace WarehouseDll.DTO.Material.Import
             VenderId = row["VENDER_ID"].ToString();
             VenderName = row["VENDER_NAME"].ToString();
 
-            BillImportInfors = loadDetail ? new BillImportDAO().GetListPart(BillNumber).OrderByDescending(x=>x.ReciveQty).ToList() : new List<BillImportInfor>() ;
+            //BillImportInfors = loadDetail ? new BillImportDAO().GetListPart(BillNumber).OrderByDescending(x=>x.ReciveQty).ToList() : new List<BillImportInfor>() ;
             BillImportPOs = loadDetail ? new BillImportDAO().GetBillImportPO(BillNumber) : new List<BillImportPO>();
         }
 
